@@ -37,19 +37,6 @@
         margin-bottom: 48px;
         justify-self: center;
     }
-    .title {
-        font-size: var(--lg);
-        margin: 12px;
-        text-align: center;
-    }
-    .subtitle {
-        color: var(--very-light-pink);
-        font-size: var(--md);
-        font-weight: 300;
-        margin-top: 0;
-        margin-bottom: 32px;
-        text-align: center;
-    }
     .form {
         display: flex;
         flex-direction: column;
@@ -100,9 +87,11 @@
                 <input type="text" id="email" placeholder="ejemplo@ejemplo.com" class="input input-email">
                 <label for="password" class="label">Password</label>
                 <input type="password" id="password" placeholder="********" class="input input-password">
+                <input type="submit" value="Log in" class="primary-button login-button">
                 <a href="">Forgot my password</a>
-                <input type="submit" value="Confirm" class="primary-button login-button">
             </form>
+
+            <button class="secondary-button signup-button">Sign Up</button>
         </div>
     </div>
 </body>
