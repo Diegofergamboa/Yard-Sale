@@ -67,7 +67,7 @@
         margin-bottom: 30px;
         
     }
-    .primary-button {
+    .secondary-button {
         background-color: var(--white);
         border-radius: 8px;
         border: 1px solid var(--hospital-green);
@@ -78,7 +78,7 @@
         font-weight: bold;
         height: 50px;
     }
-    .secondary-button {
+    .primary-button {
         background-color: var(--hospital-green);
         border-radius: 8px;
         border: none;
@@ -96,6 +96,12 @@
     @media (max-width: 640) {
         .logo {
             display: block;
+        }
+        .secondary-button {
+            width: 300px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 24px;
         }
     }
 </style>
