@@ -24,6 +24,83 @@
                 font-family: 'Quicksand', sans-serif;
                 margin: 0;
             }
+            .menu {
+                display: none;
+            }
+            .logo {
+                width: 100px;
+            }
+            .navbar-left ul ,
+            .navbar-right ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                height: 60px;
+            }
+            .navbar-left {
+                display: flex;
+            }
+            .navbar-left ul{
+                margin-left: 15px;
+            }
+            .navbar-left ul li a ,
+            .navbar-rigth ul li a {
+                text-decoration: none;
+                color: var(--very-light-pink);
+                border: 1px solid var(--white);
+                padding: 8px;
+                border-radius: 8px;
+            }
+            .navbar-left ul li a:hover ,
+            .navbar-rigth ul li a:hover {
+                text-decoration: none;
+                color: var(--hospital-green);
+                border: 1px solid var(--hospital-green);
+            }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 24px;
+                border-bottom: 1px solid var(--very-light-pink);
+            }
+            .navbar-email {
+                color: var(--very-light-pink);
+                font-size: var(--sm);
+                margin-right: 24px;
+            }
+            .dos{
+                width: 16px;
+                height: 16px;
+                background-color: var(--hospital-green);
+                border-radius: 50%;
+                font-size: var(--sm);
+                font-weight: bold;
+                position: absolute;
+                top: 5px;
+                right: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .navbar-shopping-cart {
+                position: relative;
+            }
+            @media (max-width: 640px) {
+                .menu {
+                    display: block;
+                }
+                .navbar-left ul {
+                    display: none;
+                }
+                .navbar-email {
+                    display: none;
+                }
+                .dos {
+                    display: none;
+                }
+            }
     </style>
 </head>
 <body>
@@ -35,19 +112,19 @@
 
             <ul>
                 <li>
-                    <a href="">All</a>
+                    <a href="/">All</a>
                 </li>
                 <li>
-                    <a href="">Clothes</a>
+                    <a href="/">Clothes</a>
                 </li>
                 <li>
-                    <a href="">Electronics</a>
+                    <a href="/">Electronics</a>
                 </li>
                 <li>
-                    <a href="">Furnitures</a>
+                    <a href="/">Furnitures</a>
                 </li>
                 <li>
-                    <a href="">Toys</a>
+                    <a href="/">Toys</a>
                 </li>
                 <li>
                     <a href="">Others</a>
@@ -55,11 +132,13 @@
             </ul>
         </div>
         <div class="navbar-right">
-            <li>ejemplo@mail.com</li>
-            <li class="navbar-shopping-cart">
-                <img src="/assets/Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="Shopping cart">
-            </li>
-            <div>2</div>
+            <ul>
+                <li class="navbar-email">ejemplo@mail.com</li>
+                <li class="navbar-shopping-cart">
+                    <img src="/assets/Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="Shopping cart">
+                </li>
+                <div class="dos">2</div>
+            </ul>
         </div>
     </nav>
 </body>
