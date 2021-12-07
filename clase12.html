@@ -44,21 +44,25 @@
             width: 360px;
             padding-bottom: 24px;
         }
-        .product-detail-close img {
-
+        .product-detail-close:hover {
+            cursor: pointer;
         }
         .product-detail-close {
             background-color: var(--white);
             width: 14px;
             height: 14px;
             position: absolute;
-            top: 12px;
+            top: 24px;
             left: 12px;
             z-index: 2;
             padding: 12px;
+            border-radius: 50%;
         }
         .product-detail-close img:hover {
             cursor: pointer;
+        }
+        .product-detail >img:nth-child(2){
+            width: 100%
         }
     </style>
 </head>
