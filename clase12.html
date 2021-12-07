@@ -41,7 +41,7 @@
             justify-content: center;
         }
         .product-detail {
-            width: 100%;
+            width: 360px;
             padding-bottom: 24px;
             position: absolute;
             right: 0;
@@ -90,6 +90,11 @@
             font-size: var(--sm);
             margin-top: 0;
             margin-bottom: 36px;
+        }
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
         }
     </style>
 </head>
