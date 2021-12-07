@@ -44,14 +44,29 @@
             width: 360px;
             padding-bottom: 24px;
         }
-        .product-detail >img:nth-child(1):hover{
+        .product-detail-close img {
+
+        }
+        .product-detail-close {
+            background-color: var(--white);
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            z-index: 2;
+            padding: 12px;
+        }
+        .product-detail-close img:hover {
             cursor: pointer;
         }
     </style>
 </head>
 <body>
     <aside class="product-detail">
-        <img src="/assets/Platzi_YardSale_Icons/icon_close.png" alt="">
+        <div class="product-detail-close">
+            <img src="/assets/Platzi_YardSale_Icons/icon_close.png" alt="">
+        </div>
         <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="food">
         <div class="product-info ">
             <p>$35,00</p>
